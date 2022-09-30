@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@1,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #3E3807;
+	background-image: url(./Image/websitebg.png);
+	background-size: cover;
+}
+
+nav {
+	width: auto;
+	display: flex;
+	height: 75px;
+	z-index: 10000;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #FFFACC;
+	transition: 0.4s ease-in-out;
+	font-family: Poppins;
+	position: fixed;
+	width: 100%;
+	border-radius: 0 0 23px 23px;
+}
+
+nav .logo {
+	color: #2b2b2b;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 20px;
+	display: flex;
+}
+
+nav .main-logo {
+	width: 50px;
+	height: 50px;
+}
+
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+@media screen and (max-width: 960px) {
+	nav ul {
+		display: none;
+	}
+}
+
+nav ul li {
+	margin: 0 5px;
+}
+
+nav ul li a {
+	color:#3E3807;
+	text-decoration: none;
+	font-size: 22px;
+	font-weight:500;
+	padding: 8px 22px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav .menu-btn {
+	color: #5d4840;
+	font-size: 22px;
+	cursor: pointer;
+	display: none;
+}
+
+.leftnav {
+	display: flex;
+}
+
+.btn {
+	margin: 10px;
+	padding: 10px;
+	background: #fffacc;
+	border-radius: 12px;
+	color: #590000;
+	font-size: 13px;
+	border: solid #590000 2px;
+	text-decoration: none;
+}
+
+
+input[type="checkbox"] {
+	display: none;
+}
+
+.body-bg img {
+	position: absolute;
+	width: 100%;
+	z-index: -1000;
+	overflow-y: hidden;
+}
+
+.main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ideate {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20vw;
+	color:#FFE500;
+}
+
+.subtitle {
+	font-family: 'Poppins', sans-serif;
+	font-size: 3vw;
+	color:#FFFACC;
+	padding: 30px;
+	transform: translateY(-40px);
+}
+
+.motto{
+	font-family: 'Poppins', sans-serif;
+	color:#FFE500;
+	font-size: 30px;
+	padding-left: 30px;
+}
+.second-container{
+	height: 100vh;
+}
+
+.box {
+	width: 100%;
+}
+.motto_img {
+	display: flex;
+	justify-content: center;
+}
+
+.motto_img img{
+	width: 90%;
+	padding-top: 110px;
+}
+
+.motto_text {
+	transform: translateY(120px);
+}
+
+.motto_comma {
+	font-size: 10vw;
+	color: #FFFACC;
+	font-family: 'Yrsa', serif;
+}
+
+.motto_content {
+	font-size: 5vw;
+	color: #FFFACC;
+	font-family: 'Yrsa', serif;
+}
+
+.what {
+	font-family: 'Poppins', sans-serif;
+	color:#FFE500;
+	font-size: 30px;
+	padding-left: 75px;
+	padding-top: 180px;
+}
+
+.footcontainer {
+	background-color: #6e6305;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	align-items:flex-start;
+	padding: 59px 150px ;
+	border-radius: 23px 23px 0 0;
+}
+
+@media screen and (max-width: 960px) {
+	.footcontainer{
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.social {
+		margin: none;
+		padding: none;
+	}
+}
+
+
+.footlogo{
+	padding-top: 10px;
+}
+
+.foottext{
+	padding-top: 10px;
+}
+.foot1{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.about{
+	padding-left: 20px;
+	font-family: 'Raleway', sans-serif;
+	color:#FFFACC;
+	font-size: 28px;
+}
+
+.soe{
+	padding-top: 9px;
+	padding-left: 20px ;
+	font-family: 'Poppins', sans-serif;
+	color:#FFFACC;
+	font-size: 18px;
+}
+
+.social {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center
+}
+
+.socialicon{
+	padding:12px 12px 12px 0px
+}
+
+.socialtext{
+	font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	color: #FFFACC;
+	padding-bottom: 25px;
+}
+
+.contact{
+	font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	color: #FFFACC;
+	padding-bottom: 30px;
+}
+
+.contactdiv{
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	font-size: 14px;
+	color: #FFFACC;
+
+}
+.footerlink{
+	color: #FFFACC;
+	text-decoration: none;
+}
+
+.mail{
+	padding-top: 20px;
+}
+
+.locationtext{
+	padding-left: 30px;
+}
+.locationtext1{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.bottom {
+	padding: 5px 0 5px 50px;
+	background-color: #FFFACC;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
